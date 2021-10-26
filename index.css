@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to bottom, #c62dd4,#65a4f7);
+}
+
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+
+section .color:nth-child(1) {
+   top: -150px;
+   left: 180px;
+   height: 600px;
+   width: 400px;
+   background:#ff359b;
+
+
+}
+
+section .color:nth-child(2) {
+    bottom: -50px;
+    right: 200px;
+    height: 600px;
+    width: 400px;
+    background:#5ca8ad;
+ 
+ 
+ }
+
+ section .color:nth-child(3) {
+    top: -350;
+    bottom: -180px;
+    left: 50px;
+    height: 600px;
+    width: 400px;
+    background:#c873dd;
+ 
+ 
+ }
+
+ .box{
+     position: relative;
+ }
+
+.container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgba(255,255 ,255 , 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px  45px rgba(0, 0, 0, 0.1);
+    border-right: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.form{
+    position: relative;
+    width: 100%;
+    width: 100%;
+    padding: 40px;
+}
+
+.form h2{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+
+}
+
+.form h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background-color: #f1f3f5;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 25px  45px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.6);
+
+}
+
+.form .inputBox input::placeholder{
+    color: #fff;
+}
+
+
+.form .inputBox input[type="submit"]{
+    background-color: #fff;
+    color: #666;
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.forgt{
+    margin-top: 5px;
+    color: #fff;
+}
+.forgt a{
+    color: #fff;
+    font-weight: 600;
+}
+
